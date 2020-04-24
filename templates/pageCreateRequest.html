@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="main_ap">Главная</a>
+    </div>
+</div>
+{% endblock navbar %}
+
+
+{% block content %}
+<form>
+    <div class="form-group">
+    <label for="inputAttractionName">Название достопримечательности</label>
+    <input class="form-control" type="text" id="inputAttractionName" placeholder="Название">
+    </div>
+    <div class="form-group">
+    <label for="inputAttractionAddress">Адрес достопримечательности</label>
+    <input class="form-control" type="text" id="inputAttractionAddress" placeholder="Адрес">
+    </div>
+    <div class="form-group">
+    <label for="inputAttractionDescription">Описание достопримечательности</label>
+    <textarea class="form-control" id="inputAttractionDescription" rows="5"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Тип Достопримечательности</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Архитектура и памятники</option>
+      <option>Религиозные объекты</option>
+      <option>Природные объекты</option>
+      <option>Исторические объекты</option>
+      <option>Развлекательные объекты</option>
+      <option>Музеи</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Отправить заявку</button>
+</form>
+{% endblock content %}
